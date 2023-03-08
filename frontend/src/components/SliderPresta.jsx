@@ -8,6 +8,7 @@ import Fumigene from "@assets/fumigene.jpg";
 import Poele from "@assets/poele.jpg";
 import Videoscopie from "@assets/videoscopie.jpg";
 import Vmc from "@assets/vmc.jpg";
+import Chaudiere from "@assets/chaudiere.jpg";
 
 export default function SliderPresta() {
   return (
@@ -73,6 +74,13 @@ export default function SliderPresta() {
             className="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
             aria-label="Slide 6"
           />
+          <button
+            type="button"
+            data-te-target="#carouselExampleCrossfade"
+            data-te-slide-to="6"
+            className="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+            aria-label="Slide 7"
+          />
         </div>
         <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
           <div
@@ -129,6 +137,13 @@ export default function SliderPresta() {
             data-te-carousel-item
           >
             <img src={Cheminee} className="block w-full" alt="Exotic Fruits" />
+          </div>
+          <div
+            className="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+            data-te-carousel-fade
+            data-te-carousel-item
+          >
+            <img src={Chaudiere} className="block w-full" alt="Exotic Fruits" />
           </div>
         </div>
         <button
